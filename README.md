@@ -28,7 +28,7 @@ stow -D fish
 
 ## fish requirements
 
-To get fish to work as on my system, you need to add nerd fonts and also configure iTerm2 slightly.
+To get fish to look like on my system, you need to add nerd fonts and add an iTerm2 theme.
 
 To install fonts
 
