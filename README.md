@@ -19,3 +19,9 @@ stow fish
 And they'll be symlinked to the correct place.
 
 There might be some issues with some settings, so use at your own risk.
+
+If you mess something up, the symlink can be easily deleted with
+
+```bash
+stow -D fish
+```
