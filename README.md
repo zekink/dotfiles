@@ -11,9 +11,11 @@ Use this repo with gnu stow. If you don't have it yet,
 brew install stow
 ```
 
-Then, when you want to import a certain dotfile on your system
+Clone this repo to your home folder. Then, when/if you want to import a certain dotfile on your system,
+run this inside the folder
 
 ```bash
+cd ~/dotfiles/
 stow fish
 ```
 
