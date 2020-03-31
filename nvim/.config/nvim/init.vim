@@ -1,19 +1,19 @@
 " Basic settings
 
-set showmatch           " Show matching brackets
-set number              " Show line numbers
-set formatoptions+=o    " Continue comment on new lines
-set expandtab           " Tabs are spaces
-set tabstop=4           " Tab is 4 spaces
-set shiftwidth=4        " Indentation amount for < and > commands
+set showmatch               " Show matching brackets
+set number relativenumber   " Show line numbers
+set formatoptions+=o        " Continue comment on new lines
+set expandtab               " Tabs are spaces
+set tabstop=4               " Tab is 4 spaces
+set shiftwidth=4            " Indentation amount for < and > commands
 
-set nojoinspaces        " Prevents inserting two spaces after punctuation on a join (J)
+set nojoinspaces            " Prevents inserting two spaces after punctuation on a join (J)
 
-set splitbelow          " Split horizontal below
-set splitright          " Split vertical to the right
+set splitbelow              " Split horizontal below
+set splitright              " Split vertical to the right
 
-set ignorecase          " Searching is case insensitive
-set smartcase           " Unless search contains capitals
+set ignorecase              " Searching is case insensitive
+set smartcase               " Unless search contains capitals
 
 " Plugin stuff
 " Using vim-plug as plugin manager
