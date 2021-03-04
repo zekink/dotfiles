@@ -37,6 +37,9 @@ Plug 'ctrlpvim/ctrlp.vim'
 " Let's put fzf
 Plug 'junegunn/fzf.vim'
 
+" Cool statusbar yeah
+Plug 'vim-airline/vim-airline'
+
 " Initialize plugin system
 call plug#end()
 
