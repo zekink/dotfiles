@@ -6,8 +6,8 @@ set showmatch               " Show matching brackets
 set number relativenumber   " Show line numbers
 set formatoptions+=o        " Continue comment on new lines
 set expandtab               " Tabs are spaces
-set tabstop=4               " Tab is 4 spaces
-set shiftwidth=4            " Indentation amount for < and > commands
+set tabstop=2               " Tab is 2 spaces
+set shiftwidth=2            " Indentation amount for < and > commands
 
 set nojoinspaces            " Prevents inserting two spaces after punctuation on a join (J)
 
