@@ -7,4 +7,7 @@ alias vi='nvim'
 alias la='ls -lahG'
 alias conf='vi ~/.config/fish/config.fish'
 alias sshconf='vi ~/.ssh/config'
+alias viconf='vi ~/.config/nvim/init.vim'
 alias maus='defaults write .GlobalPreferences com.apple.mouse.scaling -1'
+alias speedtest='networkQuality -v'
+
