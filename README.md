@@ -31,17 +31,15 @@ stow -D fish
 
 ## fish requirements
 
-To get fish to look like on my system, you need to add nerd fonts and add an iTerm2 theme.
+Add some nice visual flavor to fish using the `bobthefish` theme. This should work nicely out of the box in Wezterm but not necessarily in some other terminals. 
 
 To install fonts
 
 ```bash
-brew tap homebrew/cask-fonts
-brew cask install font-hack-nerd-font
-set -g theme_nerd_fonts yes
+# i'm currently messing around with a few different fonts, so this is subject to change
+brew install brew install font-comic-shanns-mono-nerd-font
+set -g theme_nerd_fonts yes # optional, i'm currently not using this
 ```
-
-The font I use is **Hack**. To get everything to look a little nicer, download the ayu theme for iTerm2.
 
 ## NeoVim requirements
 
