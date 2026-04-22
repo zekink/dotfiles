@@ -10,7 +10,6 @@ set -gx CLOUDSDK_PYTHON (which python3) # should fix some gcloud issues where it
 set -gx FZF_DEFAULT_OPTS "--height 40%"
 
 # some defaults, remove greeting
-set -gx theme_color_scheme base16
 set -g fish_greeting ""
 fish_add_path "$HOME/.local/bin"
 
