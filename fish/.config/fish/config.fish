@@ -5,12 +5,9 @@ set -gx LC_CTYPE en_US.UTF-8
 set -gx CLOUDSDK_PYTHON (which python3) # should fix some gcloud issues where it always wants to use system python instead of brew
 
 # fzf settings
-# not actually 100% sure where these came from, but they lived in fish_variables
+# originally installed because ctrl + r wasn't available in fish, haven't used other features
+# probably need to change some mappings due to rectangle overlap on macos
 set -gx FZF_DEFAULT_OPTS "--height 40%"
-set -gx FZF_LEGACY_KEYBINDINGS 1
-set -gx FZF_PREVIEW_DIR_CMD "ls"
-set -gx FZF_PREVIEW_FILE_CMD "head -n 10"
-set -gx FZF_TMUX_HEIGHT "40%"
 
 # some defaults, remove greeting
 set -gx theme_color_scheme base16

@@ -1,7 +1,11 @@
 # dotfiles
 
-Some simple dotfiles for tweaks I use. Mostly used with MacOS. I recently switched from zsh to fish and started a fresh NeoVim setup,
-so these are very much WIP and will be added to as I tweak things.
+Some simple dotfiles for tweaks I use. Mostly used with MacOS. Recently updated in 2026 since omf seemed to be pretty dead, and I cleaned up a bunch
+of trash that was a result of me being very new to fish still.
+
+Upcoming, probably:
+- New neovim configs
+- Switching from stow to chezmoi
 
 ## Usage
 
@@ -29,16 +33,29 @@ If you mess something up, the symlink can be easily deleted with
 stow -D fish
 ```
 
-## fish requirements
+## fish setup
 
-Add some nice visual flavor to fish using the `bobthefish` theme. This should work nicely out of the box in Wezterm but not necessarily in some other terminals. 
+Plugins are managed with [Fisher](https://github.com/jorgebucaran/fisher). Install Fisher first, then run `fisher update` to install all plugins listed in `fish_plugins`.
 
-To install fonts
+```bash
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+fisher update
+```
+
+The [fzf.fish](https://github.com/PatrickF1/fzf.fish) plugin (Ctrl+R, Ctrl+Alt+F, Ctrl+Alt+H, Ctrl+Alt+S) requires `fzf` and `fd`:
+
+```bash
+brew install fzf fd
+```
+
+Still using the same `bobthefish` theme that I set several years ago, might change at some point. Works out of the box in Wezterm (which I used to use)
+and Ghostty (which I use now) but maybe not some other terminals. To enable nerd font icons:
 
 ```bash
 # i'm currently messing around with a few different fonts, so this is subject to change
 brew install font-comic-shanns-mono-nerd-font
-set -g theme_nerd_fonts yes # optional, i'm currently not using this
+# then uncomment `set -g theme_nerd_fonts yes` in conf.d/bobthefish.fish
+# or not, i'm currently not using this because it felt too noisy
 ```
 
 ## NeoVim requirements

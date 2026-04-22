@@ -1,7 +1,5 @@
-# not sure which one of these catches so here's both
-fish_variables
+# fish universal variables are managed by fish itself, had these version controlled before but should be ignored
 fish/.config/fish/fish_variables
 
-# same, ignore device specific configs
-config_local.fish
+# device-specific configs
 fish/.config/fish/config_local.fish
