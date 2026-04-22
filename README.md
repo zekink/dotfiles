@@ -45,7 +45,7 @@ fisher update
 The [fzf.fish](https://github.com/PatrickF1/fzf.fish) plugin (Ctrl+R, Ctrl+Alt+F, Ctrl+Alt+H, Ctrl+Alt+S) requires `fzf` and `fd`:
 
 ```bash
-brew install fzf fd
+brew install fzf fd bat
 ```
 
 Still using the same `bobthefish` theme that I set several years ago, might change at some point. Works out of the box in Wezterm (which I used to use)
