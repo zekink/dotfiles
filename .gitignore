@@ -1,0 +1,7 @@
+# not sure which one of these catches so here's both
+fish_variables
+fish/.config/fish/fish_variables
+
+# same, ignore device specific configs
+config_local.fish
+fish/.config/fish/config_local.fish

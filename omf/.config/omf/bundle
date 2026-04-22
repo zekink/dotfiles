@@ -1,4 +1,3 @@
-package bass
 package brew
 package fzf
 theme bobthefish

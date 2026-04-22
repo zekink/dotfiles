@@ -37,7 +37,7 @@ To install fonts
 
 ```bash
 # i'm currently messing around with a few different fonts, so this is subject to change
-brew install brew install font-comic-shanns-mono-nerd-font
+brew install font-comic-shanns-mono-nerd-font
 set -g theme_nerd_fonts yes # optional, i'm currently not using this
 ```
 
