@@ -15,7 +15,7 @@ fish_add_path "$HOME/.local/bin"
 
 # aliases
 alias vi="nvim"
-alias la="ls -lahG"
+alias la="ls -lah --color=auto"
 alias conf="vi ~/.config/fish/config.fish"
 alias sshconf="vi ~/.ssh/config"
 alias viconf="vi ~/.config/nvim/init.vim"
@@ -27,6 +27,7 @@ if test (uname) = "Darwin"
     fish_add_path /opt/homebrew/sbin
     fish_add_path "/Applications/Ghostty.app/Contents/MacOS"
 
+    alias la="ls -lahG"
     alias maus="defaults write .GlobalPreferences com.apple.mouse.scaling -1" # probably should remove this since it's an exposed setting now
     alias speedtest="networkQuality -v"
 end
