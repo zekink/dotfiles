@@ -42,21 +42,27 @@ curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fi
 fisher update
 ```
 
-The [fzf.fish](https://github.com/PatrickF1/fzf.fish) plugin (Ctrl+R, Ctrl+Alt+F, Ctrl+Alt+H, Ctrl+Alt+S) requires `fzf` and `fd`:
+The [fzf.fish](https://github.com/PatrickF1/fzf.fish) plugin (Ctrl+R, Ctrl+Alt+F, Ctrl+Alt+H, Ctrl+Alt+S) requires `fzf`, `fd` and `bat`:
 
 ```bash
 brew install fzf fd bat
 ```
 
-Still using the same `bobthefish` theme that I set several years ago, might change at some point. Works out of the box in Wezterm (which I used to use)
-and Ghostty (which I use now) but maybe not some other terminals. To enable nerd font icons:
+Note: on Linux (Ubuntu 24.04 at least) `bat` won't work due to some overlap or something, and is instead called with `batcat`. Needs a local alias
+or symlink on Linux systems for now.
+
+Recently ditched the `bobthefish` theme I'd used for years as I ran into some weird issues in fish v4, currently test driving `tide` but might still check out others.
+Works fine in Ghostty at least, but without nerd fonts it's a bit broken. To enable nerd font icons:
 
 ```bash
-# i'm currently messing around with a few different fonts, so this is subject to change
-brew install font-comic-shanns-mono-nerd-font
-# then uncomment `set -g theme_nerd_fonts yes` in conf.d/bobthefish.fish
-# or not, i'm currently not using this because it felt too noisy
+brew install font-comic-shanns-mono-nerd-font # or whatever, but this font seems to have stuck for a while already
+
+# on ubuntu this seems to be the way:
+cd ~/.local/share/fonts && curl -fLO https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/ComicShannsMono/ComicShannsMonoNerdFontMono-Regular.otf
+fc-cache -fv
 ```
+
+Probably should set a theme for fish after these too with `fish_config`, not version controlling that stuff for now or maybe ever.
 
 ## NeoVim requirements
 
